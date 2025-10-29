@@ -31,7 +31,11 @@ public class Cliente extends Thread {
                 colaClientes.remove(this);
                 return;
             }
-            try { Thread.sleep(100); } catch (InterruptedException e) { return; }
+            try { 
+                Thread.sleep(100); 
+            } catch (InterruptedException e) { 
+                return; 
+            }
         }
     }
 }
