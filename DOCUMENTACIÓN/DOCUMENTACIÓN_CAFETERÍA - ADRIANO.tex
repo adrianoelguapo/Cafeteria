@@ -57,6 +57,16 @@ El objetivo de esta práctica es desarrollar una aplicación en Java que simule 
 
 La aplicación debe gestionar la llegada de clientes, la atención por parte de los camareros y la salida de los clientes una vez que han sido atendidos.
 
+\section{Stack Tecnológico}
+\justify
+La aplicación se desarrollará utilizando las siguientes tecnologías y herramientas:
+
+\subsection{Java}
+
+\subsection{JavaFX}
+
+\subsection{Visual Studio Code}
+
 \section{Requisitos Funcionales}
 
 \justify
@@ -83,6 +93,21 @@ RNF-3: Los mensajes en la consola deben ser claros y proporcionar información r
 RNF-4: El código debe estar bien estructurado y documentado para facilitar su comprensión y mantenimiento.\newline
 
 \section{Casos de Uso}
+Los posibles casos de uso de la aplicación son los siguientes:
+
+\begin{table}[h]
+    \centering
+
+    \begin{tabularx}{\textwidth}{|X|X|}\hline
+
+        \textbf{Casos de Uso}&  \textbf{Descripción}\\\hline
+
+
+        % Añadir artista&El usuario introduce la información pertinente y se añade el artista a la base de datos de la aplicación.\\ \hline
+
+    \end{tabularx}
+  
+\end{table}
 
 \justify
 A continuación se describen los casos de uso principales de la aplicación:
@@ -97,7 +122,24 @@ A continuación se describen las historias de usuario principales de la aplicaci
 \justify
 La estructura del proyecto está organizada de la siguiente manera:
 
+\begin{verbatim}
+    
+Cafetería/
+|-- DOCUMENTACIÓN/
+|   |-- DOCUMENTACIÓN_CAFETERÍA - ADRIANO.tex
+|   |-- DOCUMENTACIÓN_CAFETERÍA - ADRIANO.pdf
+|-- src/main
+|    |-- java/
+|    |    |-- com/akadoblee/cafereria/
+|    |    |    |-- Cliente.java
+|    |    |    |-- Camarero.java
+|    |    |    |-- Main.java
+|    |    |    |-- MainController.java
+|    |-- resources/
+|    |    |-- MainView.fxml
+|    |    |-- style.css
 
+\end{verbatim}
 
 \section{Clases Principales}
 
@@ -137,5 +179,7 @@ La clase \texttt{Camarero} reprsenta a un camarero que atiende a los clientes en
 \end{itemize}
 
 \subsubsection{Métodos}
+
+\section{Interfaz}
 
 \end{document}

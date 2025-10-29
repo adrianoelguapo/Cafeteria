@@ -1,16 +1,21 @@
 \babel@toc {spanish}{}\relax 
 \contentsline {section}{\numberline {1}Introducción y Objetivos}{2}{}%
-\contentsline {section}{\numberline {2}Requisitos Funcionales}{2}{}%
-\contentsline {section}{\numberline {3}Requisitos No Funcionales}{2}{}%
-\contentsline {section}{\numberline {4}Casos de Uso}{3}{}%
-\contentsline {section}{\numberline {5}Historias de Usuario}{3}{}%
-\contentsline {section}{\numberline {6}Estructura del Proyecto}{3}{}%
-\contentsline {section}{\numberline {7}Clases Principales}{3}{}%
-\contentsline {subsection}{\numberline {7.1}Clase Cliente}{3}{}%
-\contentsline {subsubsection}{\numberline {7.1.1}Descripción}{3}{}%
-\contentsline {subsubsection}{\numberline {7.1.2}Atributos}{3}{}%
-\contentsline {subsubsection}{\numberline {7.1.3}Métodos}{4}{}%
-\contentsline {subsection}{\numberline {7.2}Clase Camarero}{4}{}%
-\contentsline {subsubsection}{\numberline {7.2.1}Descripción}{4}{}%
-\contentsline {subsubsection}{\numberline {7.2.2}Atributos}{4}{}%
-\contentsline {subsubsection}{\numberline {7.2.3}Métodos}{4}{}%
+\contentsline {section}{\numberline {2}Stack Tecnológico}{2}{}%
+\contentsline {subsection}{\numberline {2.1}Java}{2}{}%
+\contentsline {subsection}{\numberline {2.2}JavaFX}{2}{}%
+\contentsline {subsection}{\numberline {2.3}Visual Studio Code}{2}{}%
+\contentsline {section}{\numberline {3}Requisitos Funcionales}{2}{}%
+\contentsline {section}{\numberline {4}Requisitos No Funcionales}{3}{}%
+\contentsline {section}{\numberline {5}Casos de Uso}{3}{}%
+\contentsline {section}{\numberline {6}Historias de Usuario}{3}{}%
+\contentsline {section}{\numberline {7}Estructura del Proyecto}{3}{}%
+\contentsline {section}{\numberline {8}Clases Principales}{4}{}%
+\contentsline {subsection}{\numberline {8.1}Clase Cliente}{4}{}%
+\contentsline {subsubsection}{\numberline {8.1.1}Descripción}{4}{}%
+\contentsline {subsubsection}{\numberline {8.1.2}Atributos}{4}{}%
+\contentsline {subsubsection}{\numberline {8.1.3}Métodos}{5}{}%
+\contentsline {subsection}{\numberline {8.2}Clase Camarero}{5}{}%
+\contentsline {subsubsection}{\numberline {8.2.1}Descripción}{5}{}%
+\contentsline {subsubsection}{\numberline {8.2.2}Atributos}{5}{}%
+\contentsline {subsubsection}{\numberline {8.2.3}Métodos}{5}{}%
+\contentsline {section}{\numberline {9}Interfaz}{5}{}%
