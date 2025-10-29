@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.9)  29 OCT 2025 22:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.9)  29 OCT 2025 22:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -271,10 +271,6 @@ Package pdftex.def Info: images/vscode_icon.png  used on input line 105.
 
 [3 <./images/css_icon.png> <./images/vscode_icon.png>]
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-
 [4]
 
 [5]
@@ -284,8 +280,14 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [7]
 
 [8]
+<images/interfaz_1.png, id=44, 521.69907pt x 411.03563pt>
+File: images/interfaz_1.png Graphic file (type png)
+<use images/interfaz_1.png>
+Package pdftex.def Info: images/interfaz_1.png  used on input line 312.
+(pdftex.def)             Requested size: 341.43306pt x 269.00764pt.
 
-[9] (DOCUMENTACIÓN_CAFETERÍA - ADRIANO.aux
+
+[9 <./images/interfaz_1.png>] (DOCUMENTACIÓN_CAFETERÍA - ADRIANO.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
@@ -295,17 +297,17 @@ L3 programming layer <2025-09-02>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 3730 strings out of 468130
- 63815 string characters out of 5429665
- 483677 words of memory out of 5000000
- 32334 multiletter control sequences out of 15000+600000
+ 3737 strings out of 468130
+ 64010 string characters out of 5429665
+ 480677 words of memory out of 5000000
+ 32341 multiletter control sequences out of 15000+600000
  632191 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,11n,65p,376b,365s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\elguapo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/elguapo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/elguapo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/elguapo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/elguapo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on "DOCUMENTACIÓN_CAFETERÍA - ADRIANO.pdf" (10 pages, 807033 bytes).
+Output written on "DOCUMENTACIÓN_CAFETERÍA - ADRIANO.pdf" (10 pages, 851378 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
+ 71 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
