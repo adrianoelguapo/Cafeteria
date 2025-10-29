@@ -6,7 +6,7 @@
 \contentsline {subsection}{\numberline {2.3}CSS}{3}{}%
 \contentsline {subsection}{\numberline {2.4}Visual Studio Code}{3}{}%
 \contentsline {section}{\numberline {3}Requisitos Funcionales}{4}{}%
-\contentsline {section}{\numberline {4}Requisitos No Funcionales}{5}{}%
+\contentsline {section}{\numberline {4}Requisitos No Funcionales}{4}{}%
 \contentsline {section}{\numberline {5}Casos de Uso}{5}{}%
 \contentsline {section}{\numberline {6}Historias de Usuario}{5}{}%
 \contentsline {section}{\numberline {7}Estructura del Proyecto}{6}{}%
@@ -15,8 +15,8 @@
 \contentsline {subsubsection}{\numberline {8.1.1}Descripción}{7}{}%
 \contentsline {subsubsection}{\numberline {8.1.2}Atributos}{7}{}%
 \contentsline {subsubsection}{\numberline {8.1.3}Métodos}{7}{}%
-\contentsline {subsection}{\numberline {8.2}Clase Camarero}{7}{}%
-\contentsline {subsubsection}{\numberline {8.2.1}Descripción}{7}{}%
-\contentsline {subsubsection}{\numberline {8.2.2}Atributos}{7}{}%
-\contentsline {subsubsection}{\numberline {8.2.3}Métodos}{7}{}%
-\contentsline {section}{\numberline {9}Interfaz}{7}{}%
+\contentsline {subsection}{\numberline {8.2}Clase Camarero}{8}{}%
+\contentsline {subsubsection}{\numberline {8.2.1}Descripción}{8}{}%
+\contentsline {subsubsection}{\numberline {8.2.2}Atributos}{8}{}%
+\contentsline {subsubsection}{\numberline {8.2.3}Métodos}{8}{}%
+\contentsline {section}{\numberline {9}Interfaz}{9}{}%

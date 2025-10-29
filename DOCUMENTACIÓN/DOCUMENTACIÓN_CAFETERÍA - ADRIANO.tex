@@ -2,15 +2,12 @@
 \usepackage[spanish]{babel}
 \usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
 \usepackage{tabularx}
-\usepackage{fancyvrb}
 \usepackage{graphicx}
 \usepackage[document]{ragged2e}
 
 \renewcommand{\baselinestretch}{1.25}
 
 \setlength{\parindent}{0pt}
-
-\DefineVerbatimEnvironment{Json}{Verbatim}{fontsize=\small, frame=single, framerule=0.5pt, framesep=5pt}
 
 \begin{document}
 
@@ -120,37 +117,28 @@ Como IDE se ha utilizado Visual Studio Code, que gracias a sus extensiones permi
 La aplicación debe cumplir con los siguientes requisitos funcionales:
 
 \justify
-\textbf{RF-1}: El sistema debe permitir la creación de objetos del tipo \texttt{Cliente} con los atributos \texttt{nombre} y \texttt{tiempoEspera}.
+\textbf{RF-1}: Cada cliente debe ejecutarse en un hilo independiente que simule su llegada a la cafetería.
 
 \justify
-\textbf{RF-2}: Cada cliente debe ejecutarse en un hilo independiente que simule su llegada a la cafetería.
+\textbf{RF-2}: Cada cliente debe intentar pedir un café y esperar un tiempo determinado \texttt{(tiempoEspera)}.
 
 \justify
-\textbf{RF-3}: Cada cliente debe intentar pedir un café y esperar un tiempo determinado \texttt{(tiempoEspera)}.
+\textbf{RF-3}: Si el café no está preparado antes de que se cumpla su \texttt{tiempoEspera}, el cliente se irá y se reflejará con un mensaje.
 
 \justify
-\textbf{RF-4}: Si el café no está preparado antes de que se cumpla su \texttt{tiempoEspera}, el cliente se irá y se reflejará con un mensaje.
+\textbf{RF-4}: Si el cliente recibe su café a tiempo, se reflejará con un mensaje que incluya que el cliente ha sido servido y cuanto tiempo ha tomado en ser atendido.
 
 \justify
-\textbf{RF-5}: Si el cliente recibe su café a tiempo, se reflejará con un mensaje que incluya que el cliente ha sido servido y cuanto tiempo ha tomado en ser atendido.
+\textbf{RF-5}: Cada camarero debe ejecutarse en un hilo independiente que simule la atención a los clientes.
 
 \justify
-\textbf{RF-6}: El sistema debe permitir la creación de objetos del tipo \texttt{Camarero}.
+\textbf{RF-6}: Los camareros deben preparar los pedidos de los clientes en base al orden de llegada.
 
 \justify
-\textbf{RF-7}: Cada camarero debe ejecutarse en un hilo independiente que simule la atención a los clientes.
+\textbf{RF-7}: Si un cliente se va antes de que su café esté listo, el camarero debe cancelar la preparación del café y pasar al siguiente cliente en la cola.
 
 \justify
-\textbf{RF-8}: Los camareros deben preparar los pedidos de los clientes en base al orden de llegada.
-
-\justify
-\textbf{RF-9}: Si un cliente se va antes de que su café esté listo, el camarero debe cancelar la preparación del café y pasar al siguiente cliente en la cola.
-
-\justify
-\textbf{RF-10}: El programa debe de seguir ejecutándose hasta que todos los clientes hayan sido atendidos o se hayan ido.
-
-\justify
-\textbf{RF-11}: Se deben mostrar mensajes en la consola que indiquen el estado de los clientes y camareros en cada momento. 
+\textbf{RF-8}: El programa debe de seguir ejecutándose hasta que todos los clientes hayan sido atendidos o se hayan ido.
 
 \section{Requisitos No Funcionales}
 
@@ -255,10 +243,25 @@ Los atributos de la clase \texttt{Cliente} son los siguientes:
     \item \texttt{boolean} \textbf{atendido}: Indica si el cliente ha sido atendido o no.
     \item \texttt{long} \textbf{inicioEspera}: Marca de tiempo que indica cuándo comenzó a esperar el cliente.
     \item \texttt{Queue<Cliente>} \textbf{colaClientes}: Cola compartida de clientes esperando ser atendidos.
+    \item \texttt{MainController} \textbf{controlador}: Referencia al controlador.
 
 \end{itemize}
 
 \subsubsection{Métodos}
+
+\justify
+Los métodos de la clase \texttt{Cliente} son los siguientes:
+
+\begin{itemize}
+
+    \item \texttt{esperarLlegadaAleatoria()}: Simula la llegada del cliente a la cafetería después de un tiempo aleatorio.
+    \item \texttt{registrarLlegada()}: Registra la llegada del cliente y lo comunica al controlador.
+    \item \texttt{irsePorImpaciencia()}: Maneja el caso en que el cliente se cansa de esperar y se va.
+    \item \texttt{dormirHilo()}: Duerme el hilo para evitar bucles de espera.
+
+\end{itemize}
+
+\newpage
 
 \subsection{Clase Camarero}
 
@@ -271,10 +274,25 @@ La clase \texttt{Camarero} reprsenta a un camarero que atiende a los clientes en
 
     \item \texttt{String} \textbf{nombre}: Nombre del camarero.
     \item \texttt{Queue<Cliente>} \textbf{colaClientes}: Cola compartida de clientes esperando ser atendidos.
+    \item \texttt{MainController} \textbf{controlador}: Referencia al controlador.
 
 \end{itemize}
 
 \subsubsection{Métodos}
+
+\justify
+Los métodos de la clase \texttt{Camarero} son los siguientes:
+
+\begin{itemize}
+
+    \item \texttt{obtenerSiguienteCliente()}: Obtiene el siguiente cliente o espera si no hay clientes.
+    \item \texttt{clienteHaEsperadoDemasiado(Cliente cliente)}: Verifica si el cliente ha esperado más de su tiempo de espera.
+    \item \texttt{manejarClienteImpaciente(Cliente cliente)}: Maneja el caso en que un cliente se va antes de ser atendido.
+    \item \texttt{prepararCafe(Cliente cliente)}: Simula la preparación del café para el cliente.
+
+\end{itemize}
+
+\newpage
 
 \section{Interfaz}
 

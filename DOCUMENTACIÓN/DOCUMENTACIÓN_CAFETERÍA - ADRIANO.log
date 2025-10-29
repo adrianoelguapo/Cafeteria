@@ -1,15 +1,15 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.26)  29 OCT 2025 18:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.9)  29 OCT 2025 22:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/akadoblee/Desktop/Cafeteria/DOCUMENTACIÓN/DOCUMENTACIÓN_CAFETERÍA - ADRIANO.tex"
-(c:/Users/akadoblee/Desktop/Cafeteria/DOCUMENTACIÓN/DOCUMENTACIÓN_CAFETERÍA - ADRIANO.tex
+**"c:/Users/elguapo/Desktop/Cafeteria/DOCUMENTACIÓN/DOCUMENTACIÓN_CAFETERÍA - ADRIANO.tex"
+(c:/Users/elguapo/Desktop/Cafeteria/DOCUMENTACIÓN/DOCUMENTACIÓN_CAFETERÍA - ADRIANO.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
-(C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+(C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
-(C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+(C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
 File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count275
@@ -23,7 +23,7 @@ File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 \bibindent=\dimen148
-) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+) (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
 Package: babel 2025/08/03 v25.12 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
 \babel@savecnt=\count283
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2045.
@@ -35,18 +35,18 @@ LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) o
 LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2078.
 \U@D=\dimen149
 \l@unhyphenated=\language79
- (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+ (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count284
 
 *************************************
 * Local config file bblopts.cfg used
 *
-(C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+(C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
-) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/babel-spanish\spanish.ldf
+) (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/babel-spanish\spanish.ldf
 Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
- (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/es\babel-spanish.tex
+ (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/es\babel-spanish.tex
 Package babel Info: Importing font and identification data for spanish
 (babel)             from babel-es.ini. Reported on input line 12.
 )
@@ -59,14 +59,14 @@ Package babel Info: Making > an active character on input line 722.
 ))
 LaTeX Encoding Info:    Redeclaring text command \guillemotleft (encoding OT1) on input line 3.
 LaTeX Encoding Info:    Redeclaring text command \guillemotright (encoding OT1) on input line 3.
- (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+ (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+ (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks18
-) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+) (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+ (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
 \Gm@cnth=\count286
@@ -81,9 +81,9 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@layouthoffset=\dimen156
 \Gm@layoutvoffset=\dimen157
 \Gm@dimlist=\toks19
- (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+ (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
 Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
- (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+ (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
 \col@sep=\dimen158
 \ar@mcellbox=\box53
@@ -100,32 +100,24 @@ Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
 \TX@delta=\dimen164
 \TX@cols=\count289
 \TX@ftn=\toks21
-) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/fancyvrb\fancyvrb.sty
-Package: fancyvrb 2025/07/28 4.6 verbatim text (tvz,hv)
-\FV@CodeLineNo=\count290
-\FV@InFile=\read3
-\FV@TabBox=\box55
-\c@FancyVerbLine=\count291
-\FV@StepNumber=\count292
-\FV@OutFile=\write3
-) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+) (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
- (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+ (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
- (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+ (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+) (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
- (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+ (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen165
 \Gin@req@width=\dimen166
-) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/ragged2e\ragged2e.sty
+) (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/ragged2e\ragged2e.sty
 Package: ragged2e 2023/06/22 v3.6 ragged2e Package
- (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/footmisc\footmisc.sty
+ (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/footmisc\footmisc.sty
 Package: footmisc 2025/05/09 v7.0b a miscellany of footnote facilities
 \FN@temptoken=\toks22
 \footnotemargin=\dimen167
@@ -150,9 +142,9 @@ Package footmisc Info: Declaring symbol style lamport*-robust on input line 618.
 \RaggedLeftParindent=\skip64
 \RaggedRightParindent=\skip65
 \JustifyingParindent=\skip66
-) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+) (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count293
+\l__color_backend_stack_int=\count290
 ) (DOCUMENTACIÓN_CAFETERÍA - ADRIANO.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
@@ -161,22 +153,22 @@ Package babel Info: 'spanish' activates 'spanish' shorthands.
 )
 \openout1 = `"DOCUMENTACIÓN_CAFETERÍA - ADRIANO.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Info: Redefining \. on input line 15.
-LaTeX Info: Redefining \% on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Info: Redefining \. on input line 12.
+LaTeX Info: Redefining \% on input line 12.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -212,31 +204,31 @@ LaTeX Info: Redefining \% on input line 15.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+(C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count294
+\scratchcounter=\count291
 \scratchdimen=\dimen168
-\scratchbox=\box56
-\nofMPsegments=\count295
-\nofMParguments=\count296
+\scratchbox=\box55
+\nofMPsegments=\count292
+\nofMParguments=\count293
 \everyMPshowfont=\toks23
-\MPscratchCnt=\count297
+\MPscratchCnt=\count294
 \MPscratchDim=\dimen169
-\MPnumerator=\count298
-\makeMPintoPDFobject=\count299
+\MPnumerator=\count295
+\makeMPintoPDFobject=\count296
 \everyMPtoPDFconversion=\toks24
-) (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+) (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (C:\Users\akadoblee\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+ (C:\Users\elguapo\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package ragged2e Info: ABD: executing \RaggedRight on input line 15.
+Package ragged2e Info: ABD: executing \RaggedRight on input line 12.
 
 
 [1
 
-{C:/Users/akadoblee/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (DOCUMENTACIÓN_CAFETERÍA - ADRIANO.toc
+{C:/Users/elguapo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (DOCUMENTACIÓN_CAFETERÍA - ADRIANO.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -246,8 +238,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 4.
 )
-\tf@toc=\write4
-\openout4 = `"DOCUMENTACIÓN_CAFETERÍA - ADRIANO.toc"'.
+\tf@toc=\write3
+\openout3 = `"DOCUMENTACIÓN_CAFETERÍA - ADRIANO.toc"'.
 
 
 
@@ -255,12 +247,12 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 <images/java_icon.png, id=12, 2007.5pt x 2007.5pt>
 File: images/java_icon.png Graphic file (type png)
 <use images/java_icon.png>
-Package pdftex.def Info: images/java_icon.png  used on input line 70.
+Package pdftex.def Info: images/java_icon.png  used on input line 67.
 (pdftex.def)             Requested size: 99.58464pt x 99.58444pt.
 <images/javafx_icon.png, id=14, 346.29375pt x 146.5475pt>
 File: images/javafx_icon.png Graphic file (type png)
 <use images/javafx_icon.png>
-Package pdftex.def Info: images/javafx_icon.png  used on input line 82.
+Package pdftex.def Info: images/javafx_icon.png  used on input line 79.
 (pdftex.def)             Requested size: 142.26378pt x 60.2056pt.
 
 
@@ -268,16 +260,20 @@ Package pdftex.def Info: images/javafx_icon.png  used on input line 82.
 <images/css_icon.png, id=20, 1885.30435pt x 1885.30435pt>
 File: images/css_icon.png Graphic file (type png)
 <use images/css_icon.png>
-Package pdftex.def Info: images/css_icon.png  used on input line 96.
+Package pdftex.def Info: images/css_icon.png  used on input line 93.
 (pdftex.def)             Requested size: 99.58464pt x 99.56393pt.
 <images/vscode_icon.png, id=21, 576.1525pt x 126.4725pt>
 File: images/vscode_icon.png Graphic file (type png)
 <use images/vscode_icon.png>
-Package pdftex.def Info: images/vscode_icon.png  used on input line 108.
+Package pdftex.def Info: images/vscode_icon.png  used on input line 105.
 (pdftex.def)             Requested size: 199.16928pt x 43.7199pt.
 
 
 [3 <./images/css_icon.png> <./images/vscode_icon.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 
 [4]
 
@@ -285,7 +281,11 @@ Package pdftex.def Info: images/vscode_icon.png  used on input line 108.
 
 [6]
 
-[7] (DOCUMENTACIÓN_CAFETERÍA - ADRIANO.aux
+[7]
+
+[8]
+
+[9] (DOCUMENTACIÓN_CAFETERÍA - ADRIANO.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
@@ -295,17 +295,17 @@ L3 programming layer <2025-09-02>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4129 strings out of 468130
- 70376 string characters out of 5428697
- 489473 words of memory out of 5000000
- 32729 multiletter control sequences out of 15000+600000
+ 3730 strings out of 468130
+ 63815 string characters out of 5429665
+ 483677 words of memory out of 5000000
+ 32334 multiletter control sequences out of 15000+600000
  632191 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,11n,65p,378b,365s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\akadoblee\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/akadoblee/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/akadoblee/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/akadoblee/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/akadoblee/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on "DOCUMENTACIÓN_CAFETERÍA - ADRIANO.pdf" (8 pages, 804480 bytes).
+ 57i,11n,65p,376b,365s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\elguapo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/elguapo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/elguapo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/elguapo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/elguapo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on "DOCUMENTACIÓN_CAFETERÍA - ADRIANO.pdf" (10 pages, 807033 bytes).
 PDF statistics:
- 63 PDF objects out of 1000 (max. 8388607)
+ 69 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

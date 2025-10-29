@@ -38,7 +38,7 @@ public class Cliente extends Thread {
 
             }
 
-            dormirUnMomento();
+            dormirHilo();
 
         }
 
@@ -75,7 +75,7 @@ public class Cliente extends Thread {
 
     }
 
-    // Caso en que el cliente se cansa y abandona la cafetería.
+    // Caso en que el cliente se cansa y se va.
     private void irsePorImpaciencia() {
 
         colaClientes.remove(this);
@@ -84,7 +84,7 @@ public class Cliente extends Thread {
     }
 
     // Duerme un poco el hilo para evitar un bucles de espera.
-    private void dormirUnMomento() {
+    private void dormirHilo() {
 
         try {
 
