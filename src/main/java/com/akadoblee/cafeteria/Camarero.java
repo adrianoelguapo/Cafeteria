@@ -4,6 +4,7 @@ import java.util.Queue;
 
 public class Camarero extends Thread {
     String nombre;
+    int cafesServidos = 0;
     Queue<Cliente> colaClientes;
 
     public Camarero(String nombre, Queue<Cliente> colaClientes) {
@@ -14,25 +15,35 @@ public class Camarero extends Thread {
     @Override
     public void run() {
         while (true) {
-            if (Thread.interrupted()) break;
+            Cliente cliente = colaClientes.poll();
 
-            Cliente cliente = colaClientes.peek();
             if (cliente == null) {
-                try { Thread.sleep(200); } catch (InterruptedException e) { break; }
+                if (Main.todosLlegaron && colaClientes.isEmpty()) break;
+                try {
+                    Thread.sleep(200);
+                } catch (InterruptedException e) {
+                    break;
+                }
                 continue;
             }
 
-            long espera = System.currentTimeMillis() - cliente.inicioEspera;
-            if (espera > cliente.tiempoEspera) {
-                colaClientes.poll();
-                continue;
-            }
-
+            // Preparar café
             int tiempoPreparacion = (int) (Math.random() * 3000 + 1000);
-            try { Thread.sleep(tiempoPreparacion); } catch (InterruptedException e) { break; }
+            System.out.println(nombre + " está preparando café para " + cliente.nombre +
+                               " (" + tiempoPreparacion + " ms)");
+            try {
+                Thread.sleep(tiempoPreparacion);
+            } catch (InterruptedException e) {
+                break;
+            }
 
-            cliente.atendido = true;
-            colaClientes.poll();
+            if (!cliente.atendido) {
+                cliente.atendido = true;
+                cafesServidos++;
+                System.out.println(nombre + " terminó el café de " + cliente.nombre);
+            }
         }
+
+        System.out.println(nombre + " terminó su turno con " + cafesServidos + " cafés servidos.");
     }
 }

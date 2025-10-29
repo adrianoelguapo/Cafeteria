@@ -18,20 +18,31 @@ public class Cliente extends Thread {
     @Override
     public void run() {
         try {
-            Thread.sleep((int) (Math.random() * 3000));
+            int tiempoLlegada = (int) (Math.random() * 3000);
+            Thread.sleep(tiempoLlegada);
         } catch (InterruptedException e) {
             return;
         }
 
+        System.out.println(nombre + " ha llegado a la cafetería (esperará " + tiempoEspera + " ms)");
         inicioEspera = System.currentTimeMillis();
         colaClientes.add(this);
 
         while (!atendido) {
             if (System.currentTimeMillis() - inicioEspera > tiempoEspera) {
-                colaClientes.remove(this);
+                if (!atendido) {
+                    System.out.println(nombre + " se cansó de esperar y se fue");
+                    colaClientes.remove(this);
+                }
                 return;
             }
-            try { Thread.sleep(100); } catch (InterruptedException e) { return; }
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                return;
+            }
         }
+
+        System.out.println(nombre + " recibió su café y está feliz");
     }
 }
