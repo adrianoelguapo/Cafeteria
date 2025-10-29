@@ -205,6 +205,8 @@ Cafetería/
 |-- DOCUMENTACIÓN/
 |   |-- images/
 |   |    |-- css_icon.png
+|   |    |-- interfaz_1.png
+|   |    |-- interfaz_2.png
 |   |    |-- java_icon.png
 |   |    |-- javafx_icon.png
 |   |    |-- vscode_icon.png
@@ -240,6 +242,7 @@ Los atributos de la clase \texttt{Cliente} son los siguientes:
     \item \texttt{String} \textbf{nombre}: Nombre del cliente.
     \item \texttt{String} \textbf{tiempoEspera}: Tiempo máximo que el cliente está dispuesto a esperar por su café.
     \item \texttt{boolean} \textbf{atendido}: Indica si el cliente ha sido atendido o no.
+    \item \texttt{boolean} \textbf{activo}: Indica si el cliente sigue esperando o se ha ido.
     \item \texttt{long} \textbf{inicioEspera}: Marca de tiempo que indica cuándo comenzó a esperar el cliente.
     \item \texttt{Queue<Cliente>} \textbf{colaClientes}: Cola compartida de clientes esperando ser atendidos.
     \item \texttt{MainController} \textbf{controlador}: Referencia al controlador.
@@ -255,6 +258,7 @@ Los métodos de la clase \texttt{Cliente} son los siguientes:
 
     \item \texttt{esperarLlegadaAleatoria()}: Simula la llegada del cliente a la cafetería después de un tiempo aleatorio.
     \item \texttt{registrarLlegada()}: Registra la llegada del cliente y lo comunica al controlador.
+    \item \texttt{haEsperadoDemasiado()}: Verifica si el cliente ha esperado más de su tiempo de espera.
     \item \texttt{irsePorImpaciencia()}: Maneja el caso en que el cliente se cansa de esperar y se va.
     \item \texttt{dormirHilo()}: Duerme el hilo para evitar bucles de espera.
 
@@ -310,6 +314,18 @@ La interfaz gráfica de la aplicación consta de tres secciones:
 
     \centering
     \includegraphics[width=12cm]{images/interfaz_1.png}
+
+\end{figure}
+
+\newpage
+
+\justify
+Una vez haya terminado la ejecución del programa, la label inferior habrá cambiado y los clientes estarán clasificados en sus respectivas columnas según si han sido atendidos o no.
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=12cm]{images/interfaz_2.png}
 
 \end{figure}
 
