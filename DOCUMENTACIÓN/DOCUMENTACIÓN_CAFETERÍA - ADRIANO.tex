@@ -172,7 +172,7 @@ La aplicación debe cumplir con los siguientes requisitos no funcionales:
 \section{Casos de Uso}
 
 \justify
-Los posibles casos de uso de la aplicación son los siguientes:
+A continuación se describen los casos de uso principales de la aplicación:
 
 \begin{table}[h]
     \centering
@@ -180,21 +180,32 @@ Los posibles casos de uso de la aplicación son los siguientes:
     \begin{tabularx}{\textwidth}{|X|X|}\hline
 
         \textbf{Casos de Uso}&  \textbf{Descripción}\\\hline
-
-
-        % Añadir artista&El usuario introduce la información pertinente y se añade el artista a la base de datos de la aplicación.\\ \hline
+        Iniciar aplicación&El usuario inicia la aplicación para simular el funcionamiento de una cafetería.\\ \hline
 
     \end{tabularx}
   
 \end{table}
 
-\justify
-A continuación se describen los casos de uso principales de la aplicación:
-
 \section{Historias de Usuario}
 
 \justify
 A continuación se describen las historias de usuario principales de la aplicación:
+
+\begin{table}[h]
+
+    \centering
+
+    \begin{tabularx}{\textwidth}{|X|X|X|X|}\hline
+
+        \textbf{ID}&  \textbf{Como un...}& \textbf{Quiero...}& \textbf{Para...}\\\hline
+
+        HU-1&Usuario&Iniciar la aplicación&Simular el funcionamiento de una cafetería con clientes y camareros.\\ \hline
+
+    \end{tabularx}
+
+\end{table}
+
+\newpage
 
 \section{Estructura del Proyecto}
 
@@ -206,6 +217,7 @@ La estructura del proyecto está organizada de la siguiente manera:
 Cafetería/
 |-- DOCUMENTACIÓN/
 |   |-- images/
+|   |    |-- css_icon.png
 |   |    |-- java_icon.png
 |   |    |-- javafx_icon.png
 |   |    |-- vscode_icon.png
@@ -213,7 +225,7 @@ Cafetería/
 |   |-- DOCUMENTACIÓN_CAFETERÍA - ADRIANO.pdf
 |-- src/main
 |    |-- java/
-|    |    |-- com/akadoblee/cafereria/
+|    |    |-- com/akadoblee/cafeteria/
 |    |    |    |-- Cliente.java
 |    |    |    |-- Camarero.java
 |    |    |    |-- Main.java
@@ -223,6 +235,8 @@ Cafetería/
 |    |    |-- style.css
 
 \end{verbatim}
+
+\newpage
 
 \section{Clases Principales}
 
@@ -256,7 +270,6 @@ La clase \texttt{Camarero} reprsenta a un camarero que atiende a los clientes en
 \begin{itemize}
 
     \item \texttt{String} \textbf{nombre}: Nombre del camarero.
-    \item \texttt{int} \textbf{cafesServidos}: Contador de cafés servidos por el camarero.
     \item \texttt{Queue<Cliente>} \textbf{colaClientes}: Cola compartida de clientes esperando ser atendidos.
 
 \end{itemize}
