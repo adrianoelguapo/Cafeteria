@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1761753175.61345 "c:/Users/akadoblee/Desktop/Cafeteria/DOCUMENTACIÓN/DOCUMENTACIÓN_CAFETERÍA - ADRIANO.tex" "DOCUMENTACIÓN_CAFETERÍA - ADRIANO.pdf" "DOCUMENTACIÓN_CAFETERÍA - ADRIANO" 1761753176.43332 0
+["pdflatex"] 1761754871.32028 "c:/Users/akadoblee/Desktop/Cafeteria/DOCUMENTACIÓN/DOCUMENTACIÓN_CAFETERÍA - ADRIANO.tex" "DOCUMENTACIÓN_CAFETERÍA - ADRIANO.pdf" "DOCUMENTACIÓN_CAFETERÍA - ADRIANO" 1761754872.75503 0
   "C:/Users/akadoblee/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1761323146 83282 621ebaed9bd86f6f3d021276677be3b2 ""
   "C:/Users/akadoblee/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1758905673 14064 c62bc7d74c9ec1b564756c8c03ff24fe ""
   "C:/Users/akadoblee/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1758905664 13288902 ba10cf61fbc757ba073640a787eb3b25 ""
@@ -47,10 +47,14 @@
   "C:/Users/akadoblee/AppData/Local/Programs/MiKTeX/tex/latex/ragged2e/ragged2e.sty" 1687525147 10085 3dececaeed388e31285c366e124c0c4e ""
   "C:/Users/akadoblee/AppData/Local/Programs/MiKTeX/tex/latex/tools/array.sty" 1749468414 15698 f5f20b24886bb50156054c53e19b13fd ""
   "C:/Users/akadoblee/AppData/Local/Programs/MiKTeX/tex/latex/tools/tabularx.sty" 1749468414 7243 a2c17f18e2c9b702b84fad03d5f9c78b ""
-  "DOCUMENTACIÓN_CAFETERÍA - ADRIANO.aux" 1761753176 2361 050bb9537ad30231d48e5e8e0bdd347b "pdflatex"
-  "DOCUMENTACIÓN_CAFETERÍA - ADRIANO.tex" 1761753174 6452 342d99d71bc24b5ecc18e94f57155a16 ""
-  "DOCUMENTACIÓN_CAFETERÍA - ADRIANO.toc" 1761753176 1339 2dca65a4aa9875cb5befa1e09134cf37 "pdflatex"
-  "c:/Users/akadoblee/Desktop/Cafeteria/DOCUMENTACIÓN/DOCUMENTACIÓN_CAFETERÍA - ADRIANO.tex" 1761753174 6452 342d99d71bc24b5ecc18e94f57155a16 ""
+  "DOCUMENTACIÓN_CAFETERÍA - ADRIANO.aux" 1761754872 2457 1828b1c367c3360c1cb9efd87e33f86b "pdflatex"
+  "DOCUMENTACIÓN_CAFETERÍA - ADRIANO.tex" 1761754871 7890 f49bc09d47d3ae6e88f5186e8f6837bf ""
+  "DOCUMENTACIÓN_CAFETERÍA - ADRIANO.toc" 1761754872 1394 fb60de84b4b14096608d98b3baa0daf1 "pdflatex"
+  "c:/Users/akadoblee/Desktop/Cafeteria/DOCUMENTACIÓN/DOCUMENTACIÓN_CAFETERÍA - ADRIANO.tex" 1761754871 7890 f49bc09d47d3ae6e88f5186e8f6837bf ""
+  "images/css_icon.png" 1761754562 91315 7175f74000fa64f1aff25314819f048e ""
+  "images/java_icon.png" 1761145535 508604 9aa5a7cc8403eb6ddf7520012b481165 ""
+  "images/javafx_icon.png" 1761754248 7255 e26c01261d5de18fdea4cb1beb3ad467 ""
+  "images/vscode_icon.png" 1761754113 8089 e2f427411f55a6eaa05d09ee5a6a21b2 ""
   (generated)
   "DOCUMENTACIÓN_CAFETERÍA - ADRIANO.aux"
   "DOCUMENTACIÓN_CAFETERÍA - ADRIANO.log"

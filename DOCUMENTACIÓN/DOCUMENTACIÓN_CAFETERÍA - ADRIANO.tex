@@ -55,6 +55,7 @@
 \justify
 El objetivo de esta práctica es desarrollar una aplicación en Java que simule el funcionamiento de una cafetería en la que los clientes llegarán periódicamente a la cafetería a realizar su pedido y serán atendidos por los camareros disponibles. 
 
+\justify
 La aplicación debe gestionar la llegada de clientes, la atención por parte de los camareros y la salida de los clientes una vez que han sido atendidos.
 
 \section{Stack Tecnológico}
@@ -63,36 +64,114 @@ La aplicación se desarrollará utilizando las siguientes tecnologías y herrami
 
 \subsection{Java}
 
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=3.5cm]{images/java_icon.png}
+
+\end{figure}
+
+\justify
+El lenguaje de programación utililazo para desarrollar la lógica de la aplicación es Java, debido a su robustez y capacidad para manejar múltiples hilos de ejecución.
+
 \subsection{JavaFX}
 
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=5cm]{images/javafx_icon.png}
+
+\end{figure}
+
+\justify
+JavaFX se ha utilizado como tecnología para desarrollar la interfaz gráfica de la aplicación, proporcionando una manera visual de ver el resultado del programa.
+
+\newpage
+
+\subsection{CSS}
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=3.5cm]{images/css_icon.png}
+
+\end{figure}
+
+\justify
+CSS se ha utilizado para dar estilo a la interfaz gráfica desarrollada con JavaFX, mejorando la experiencia del usuario.
+
 \subsection{Visual Studio Code}
+
+\begin{figure}[h]
+
+    \centering
+    \includegraphics[width=7cm]{images/vscode_icon.png}
+
+\end{figure}
+
+\justify
+Como IDE se ha utilizado Visual Studio Code, que gracias a sus extensiones permite un desarrollo eficiente en Java y JavaFX.
+
+\newpage
 
 \section{Requisitos Funcionales}
 
 \justify
-La aplicación debe cumplir con los siguientes requisitos funcionales: \newline
-RF-1: El sistema debe permitir la creación de objetos del tipo \texttt{Cliente} con los atributos \texttt{nombre} y \texttt{tiempoEspera}.\newline
-RF-2: Cada cliente debe ejecutarse en un hilo independiente que simule su llegada a la cafetería.\newline
-RF-3: Cada cliente debe intentar pedir un café y esperar un tiempo determinado \texttt{(tiempoEspera)}.\newline
-RF-4: Si el café no está preparado antes de que se cumpla su \texttt{tiempoEspera}, el cliente se irá y se reflejará con un mensaje.\newline
-RF-5: Si el cliente recibe su café a tiempo, se reflejará con un mensaje que incluya que el cliente ha sido servido y cuanto tiempo ha tomado en ser atendido.\newline
-RF-6: El sistema debe permitir la creación de objetos del tipo \texttt{Camarero}.\newline
-RF-7: Cada camarero debe ejecutarse en un hilo independiente que simule la atención a los clientes.\newline
-RF-8: Los camareros deben preparar los pedidos de los clientes en base al orden de llegada.\newline
-RF-9: Si un cliente se va antes de que su café esté listo, el camarero debe cancelar la preparación del café y pasar al siguiente cliente en la cola.\newline
-RF-10: El programa debe de seguir ejecutándose hasta que todos los clientes hayan sido atendidos o se hayan ido.\newline
-RF-11: Se deben mostrar mensajes en la consola que indiquen el estado de los clientes y camareros en cada momento. 
+La aplicación debe cumplir con los siguientes requisitos funcionales:
+
+\justify
+\textbf{RF-1}: El sistema debe permitir la creación de objetos del tipo \texttt{Cliente} con los atributos \texttt{nombre} y \texttt{tiempoEspera}.
+
+\justify
+\textbf{RF-2}: Cada cliente debe ejecutarse en un hilo independiente que simule su llegada a la cafetería.
+
+\justify
+\textbf{RF-3}: Cada cliente debe intentar pedir un café y esperar un tiempo determinado \texttt{(tiempoEspera)}.
+
+\justify
+\textbf{RF-4}: Si el café no está preparado antes de que se cumpla su \texttt{tiempoEspera}, el cliente se irá y se reflejará con un mensaje.
+
+\justify
+\textbf{RF-5}: Si el cliente recibe su café a tiempo, se reflejará con un mensaje que incluya que el cliente ha sido servido y cuanto tiempo ha tomado en ser atendido.
+
+\justify
+\textbf{RF-6}: El sistema debe permitir la creación de objetos del tipo \texttt{Camarero}.
+
+\justify
+\textbf{RF-7}: Cada camarero debe ejecutarse en un hilo independiente que simule la atención a los clientes.
+
+\justify
+\textbf{RF-8}: Los camareros deben preparar los pedidos de los clientes en base al orden de llegada.
+
+\justify
+\textbf{RF-9}: Si un cliente se va antes de que su café esté listo, el camarero debe cancelar la preparación del café y pasar al siguiente cliente en la cola.
+
+\justify
+\textbf{RF-10}: El programa debe de seguir ejecutándose hasta que todos los clientes hayan sido atendidos o se hayan ido.
+
+\justify
+\textbf{RF-11}: Se deben mostrar mensajes en la consola que indiquen el estado de los clientes y camareros en cada momento. 
 
 \section{Requisitos No Funcionales}
 
 \justify
-La aplicación debe cumplir con los siguientes requisitos no funcionales: \newline
-RNF-1: El programa debe de manejar múltiples hilos de ejecución para simular la concurrencia entre clientes y camareros.\newline
-RNF-2: Se debe garantizar que cada cliente sea atendido una sola vez.\newline
-RNF-3: Los mensajes en la consola deben ser claros y proporcionar información relevante sobre el estado de la cafetería.\newline
-RNF-4: El código debe estar bien estructurado y documentado para facilitar su comprensión y mantenimiento.\newline
+La aplicación debe cumplir con los siguientes requisitos no funcionales:
+
+\justify
+\textbf{RNF-1}: El programa debe de manejar múltiples hilos de ejecución para simular la concurrencia entre clientes y camareros.
+
+\justify
+\textbf{RNF-2}: Se debe garantizar que cada cliente sea atendido una sola vez.
+
+\justify
+\textbf{RNF-3}: Los mensajes en la consola deben ser claros y proporcionar información relevante sobre el estado de la cafetería.
+
+\justify
+\textbf{RNF-4}: El código debe estar bien estructurado y documentado para facilitar su comprensión y mantenimiento.
 
 \section{Casos de Uso}
+
+\justify
 Los posibles casos de uso de la aplicación son los siguientes:
 
 \begin{table}[h]
@@ -126,6 +205,10 @@ La estructura del proyecto está organizada de la siguiente manera:
     
 Cafetería/
 |-- DOCUMENTACIÓN/
+|   |-- images/
+|   |    |-- java_icon.png
+|   |    |-- javafx_icon.png
+|   |    |-- vscode_icon.png
 |   |-- DOCUMENTACIÓN_CAFETERÍA - ADRIANO.tex
 |   |-- DOCUMENTACIÓN_CAFETERÍA - ADRIANO.pdf
 |-- src/main
