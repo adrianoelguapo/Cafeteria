@@ -1,40 +1,67 @@
 .root {
+
     -fx-background-color: radial-gradient(radius 100%, derive(#4e342e,20%), #3e2723);
     -fx-padding: 30;
+
 }
 
 .titulo {
+
     -fx-font-size: 22px;
     -fx-text-fill: #ffe0b2;
     -fx-font-weight: bold;
     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.6), 5,0,2,2);
+
 }
 
 .subtitulo {
+
     -fx-font-size: 15px;
     -fx-text-fill: #f8ede3;
     -fx-font-weight: bold;
+
 }
 
 .panel {
+
     -fx-background-color: rgba(255,255,255,0.15);
     -fx-background-radius: 20;
     -fx-padding: 10;
     -fx-border-color: rgba(255,255,255,0.3);
     -fx-border-radius: 20;
     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 10,0,0,5);
+
 }
 
 .list-view {
-    -fx-background-color: transparent;
-    -fx-control-inner-background: rgba(255,255,255,0.2);
+
+    -fx-background-color: rgba(255,255,255,0.12);
+    -fx-control-inner-background: rgba(255,255,255,0.12);
     -fx-background-radius: 15;
     -fx-border-radius: 15;
-    -fx-border-color: rgba(255,255,255,0.4);
+    -fx-border-color: rgba(255,255,255,0.3);
+    -fx-text-fill: white;
+
+}
+
+.list-cell {
+
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+
+}
+
+.list-cell:filled:selected,
+.list-cell:filled:hover {
+
+    -fx-background-color: rgba(255,255,255,0.3);
     -fx-text-fill: #3e2723;
+
 }
 
 .boton {
+
     -fx-background-color: rgba(255,255,255,0.2);
     -fx-text-fill: #fff3e0;
     -fx-background-radius: 15;
@@ -42,14 +69,19 @@
     -fx-font-weight: bold;
     -fx-cursor: hand;
     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 5,0,2,2);
+
 }
 
 .boton:hover {
+
     -fx-background-color: rgba(255,255,255,0.35);
+
 }
 
 .estado {
+
     -fx-text-fill: #ffe0b2;
     -fx-font-size: 14px;
     -fx-font-style: italic;
+    
 }
