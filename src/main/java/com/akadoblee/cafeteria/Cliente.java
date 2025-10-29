@@ -8,6 +8,7 @@ public class Cliente extends Thread {
     String nombre;
     int tiempoEspera;
     boolean atendido = false;
+    boolean activo = true;
     long inicioEspera;
     Queue<Cliente> colaClientes;
     MainController controlador;
@@ -78,6 +79,9 @@ public class Cliente extends Thread {
     // Caso en que el cliente se cansa y se va.
     private void irsePorImpaciencia() {
 
+        if (!activo) return;
+
+        activo = false;
         colaClientes.remove(this);
         controlador.clienteSeVa(nombre);
 

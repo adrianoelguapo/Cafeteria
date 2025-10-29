@@ -25,10 +25,16 @@ public class Camarero extends Thread {
             Cliente cliente = obtenerSiguienteCliente();
             if (cliente == null) continue;
 
+            if (!cliente.activo || cliente.atendido) {
+
+                colaClientes.poll();
+                continue;
+
+            }
+
             if (clienteHaEsperadoDemasiado(cliente)) {
 
                 manejarClienteImpaciente(cliente);
-
                 continue;
 
             }
@@ -39,7 +45,7 @@ public class Camarero extends Thread {
 
     }
 
-    // Obtiene el siguiente cliente o espera si no hay.
+    // Obtiene el siguiente cliente de la cola y si no espera
     private Cliente obtenerSiguienteCliente() {
 
         Cliente cliente = colaClientes.peek();
@@ -50,7 +56,8 @@ public class Camarero extends Thread {
 
                 Thread.sleep(200);
 
-            } catch (InterruptedException e) {
+            } 
+            catch (InterruptedException e) {
 
                 interrupt();
 
@@ -73,13 +80,18 @@ public class Camarero extends Thread {
     // Caso en que el cliente se cansa y se va.
     private void manejarClienteImpaciente(Cliente cliente) {
 
+        if (!cliente.activo || cliente.atendido) return;
+
+        cliente.activo = false;
         colaClientes.poll();
         controlador.clienteSeVa(cliente.nombre);
 
     }
 
-    // Preparación del café para el cliente.
+     // Preparación del café para el cliente.
     private void prepararCafe(Cliente cliente) {
+
+        if (!cliente.activo || cliente.atendido) return;
 
         int tiempoPreparacion = (int) (Math.random() * 3000 + 1000);
 
@@ -94,7 +106,10 @@ public class Camarero extends Thread {
 
         }
 
+        if (!cliente.activo) return;
+
         cliente.atendido = true;
+        cliente.activo = false;
         colaClientes.poll();
         controlador.clienteAtendido(cliente.nombre);
 
