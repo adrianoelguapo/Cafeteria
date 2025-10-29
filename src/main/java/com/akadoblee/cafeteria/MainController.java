@@ -8,15 +8,18 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 
 public class MainController {
 
+    // Elementos de la interfaz
     @FXML private Button btnIniciar;
     @FXML private ListView<String> listaEsperando;
     @FXML private ListView<String> listaAtendidos;
     @FXML private ListView<String> listaSeFueron;
     @FXML private Label lblEstado;
 
+    // Cola de clientes y estado de la simulación
     Queue<Cliente> colaClientes = new ConcurrentLinkedQueue<>();
     volatile boolean enMarcha = false;
 
+    // Inicia la simulación al pulsar el botón
     @FXML
     private void iniciarSimulacion() {
         btnIniciar.setDisable(true);
@@ -33,11 +36,13 @@ public class MainController {
 
         // Crear clientes
         Cliente[] clientes = {
+
             new Cliente("Ana", 3000, colaClientes, this),
             new Cliente("Luis", 5000, colaClientes, this),
             new Cliente("Marta", 2000, colaClientes, this),
             new Cliente("Carlos", 4000, colaClientes, this),
             new Cliente("Sofía", 6000, colaClientes, this)
+
         };
 
         // Iniciar camareros
@@ -46,15 +51,22 @@ public class MainController {
 
         // Iniciar clientes
         for (Cliente cliente : clientes) {
+
             cliente.start();
         }
 
-        // Esperar finalización sin hilos extra
+
+        // Esperar finalización de clientes
         new Thread(() -> {
+
             for (Cliente cliente : clientes) {
+
                 try {
+
                     cliente.join();
+
                 } catch (InterruptedException ignored) {}
+
             }
 
             enMarcha = false;
@@ -62,37 +74,60 @@ public class MainController {
             c2.interrupt();
 
             try {
+
                 c1.join(); 
-                c2.join(); 
+                c2.join();
+
             } catch (InterruptedException ignored) {}
 
             Platform.runLater(() -> {
+
                 lblEstado.setText("Todos los clientes fueron atendidos o se fueron.");
                 btnIniciar.setDisable(false);
+
             });
+
         }).start();
+
     }
 
+    // Registra la llegada de un cliente
     public void clienteLlega(String nombre) {
+
         Platform.runLater(() -> {
+
             if (!listaEsperando.getItems().contains(nombre))
                 listaEsperando.getItems().add(nombre);
+
         });
+
     }
 
+    // Caso en que un cliente es atendido
     public void clienteAtendido(String nombre) {
+
         Platform.runLater(() -> {
+
             listaEsperando.getItems().remove(nombre);
+
             if (!listaAtendidos.getItems().contains(nombre))
                 listaAtendidos.getItems().add(nombre);
+
         });
+
     }
 
+    // Caso en que un cliente se va
     public void clienteSeVa(String nombre) {
+
         Platform.runLater(() -> {
+
             listaEsperando.getItems().remove(nombre);
             if (!listaSeFueron.getItems().contains(nombre))
                 listaSeFueron.getItems().add(nombre);
+
         });
+
     }
+
 }
