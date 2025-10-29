@@ -52,14 +52,19 @@ public class MainController {
         // Esperar finalización sin hilos extra
         new Thread(() -> {
             for (Cliente cliente : clientes) {
-                try { cliente.join(); } catch (InterruptedException ignored) {}
+                try {
+                    cliente.join();
+                } catch (InterruptedException ignored) {}
             }
 
             enMarcha = false;
             c1.interrupt();
             c2.interrupt();
 
-            try { c1.join(); c2.join(); } catch (InterruptedException ignored) {}
+            try {
+                c1.join(); 
+                c2.join(); 
+            } catch (InterruptedException ignored) {}
 
             Platform.runLater(() -> {
                 lblEstado.setText("Todos los clientes fueron atendidos o se fueron.");
@@ -67,8 +72,6 @@ public class MainController {
             });
         }).start();
     }
-
-    // ==== Métodos para actualizar la interfaz ====
 
     public void clienteLlega(String nombre) {
         Platform.runLater(() -> {
