@@ -11,7 +11,7 @@ public class Main{
 
         // Crear camareros
         Camarero c1 = new Camarero("Camarero 1", colaClientes);
-        Camarero c2 = new Camarero("Camarero 1", colaClientes);
+        Camarero c2 = new Camarero("Camarero 2", colaClientes);
 
         // Crear clientes
         Cliente[] clientes = {
@@ -22,9 +22,12 @@ public class Main{
             new Cliente("Sofia",6000,colaClientes),
         };
 
-        // Iniciar camareros
+        // Iniciar camareros y clientes
         c1.start();
         c2.start();
+        for (Cliente cliente : clientes) {
+            cliente.start();
+        }
 
         // Esperar a que todos los clientes terminen
         for (Cliente cliente : clientes){

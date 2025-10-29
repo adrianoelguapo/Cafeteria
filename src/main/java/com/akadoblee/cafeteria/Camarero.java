@@ -27,20 +27,21 @@ public class Camarero extends Thread {
                 continue;
             }
 
-            // Preparar café
             int tiempoPreparacion = (int) (Math.random() * 3000 + 1000);
-            System.out.println(nombre + " está preparando café para " + cliente.nombre +
-                               " (" + tiempoPreparacion + " ms)");
+            System.out.println(nombre + " está preparando café para " + cliente.nombre + " (" + tiempoPreparacion + " ms)");
+
             try {
                 Thread.sleep(tiempoPreparacion);
             } catch (InterruptedException e) {
                 break;
             }
 
-            if (!cliente.atendido) {
-                cliente.atendido = true;
-                cafesServidos++;
-                System.out.println(nombre + " terminó el café de " + cliente.nombre);
+            synchronized(cliente) {
+                if (!cliente.atendido) {
+                    cliente.atendido = true;
+                    cafesServidos++;
+                    System.out.println(nombre + " terminó el café de " + cliente.nombre);
+                }
             }
         }
 

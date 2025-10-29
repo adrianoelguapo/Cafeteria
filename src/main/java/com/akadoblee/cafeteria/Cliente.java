@@ -30,11 +30,13 @@ public class Cliente extends Thread {
 
         while (!atendido) {
             if (System.currentTimeMillis() - inicioEspera > tiempoEspera) {
-                if (!atendido) {
-                    System.out.println(nombre + " se cansó de esperar y se fue");
-                    colaClientes.remove(this);
+                synchronized(this) {
+                    if (!atendido) {
+                        System.out.println(nombre + " se cansó de esperar y se fue");
+                        colaClientes.remove(this);
+                        return;
+                    }
                 }
-                return;
             }
             try {
                 Thread.sleep(100);
