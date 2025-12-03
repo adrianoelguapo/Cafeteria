@@ -10,6 +10,7 @@ public class MainController {
 
     // Elementos de la interfaz
     @FXML private Button btnIniciar;
+    @FXML private Button btnAñadirCliente;
     @FXML private ListView<String> listaEsperando;
     @FXML private ListView<String> listaAtendidos;
     @FXML private ListView<String> listaSeFueron;
@@ -17,7 +18,8 @@ public class MainController {
 
     // Cola de clientes y estado de la simulación
     Queue<Cliente> colaClientes = new ConcurrentLinkedQueue<>();
-    volatile boolean enMarcha = false;
+    boolean enMarcha = false;
+    int contadorClientes = 0;
 
     // Inicia la simulación al pulsar el botón
     @FXML
@@ -27,6 +29,7 @@ public class MainController {
         listaAtendidos.getItems().clear();
         listaSeFueron.getItems().clear();
         lblEstado.setText("Simulación en curso...");
+        contadorClientes = 0;
 
         enMarcha = true;
 
@@ -34,60 +37,36 @@ public class MainController {
         Camarero c1 = new Camarero("Camarero 1", colaClientes, this);
         Camarero c2 = new Camarero("Camarero 2", colaClientes, this);
 
-        // Crear clientes
-        Cliente[] clientes = {
-
-            new Cliente("Ana", 3000, colaClientes, this),
-            new Cliente("Luis", 5000, colaClientes, this),
-            new Cliente("Marta", 2000, colaClientes, this),
-            new Cliente("Carlos", 4000, colaClientes, this),
-            new Cliente("Sofía", 6000, colaClientes, this)
-
-        };
-
         // Iniciar camareros
         c1.start();
         c2.start();
 
-        // Iniciar clientes
-        for (Cliente cliente : clientes) {
+    }
 
-            cliente.start();
-        }
+    // Añade un nuevo cliente al pulsar el botón
+    @FXML
+    private void añadirCliente() {
 
+        if (!enMarcha) return;
 
-        // Esperar finalización de clientes
-        new Thread(() -> {
+        String nombre = "Cliente " + contadorClientes;
+        int tiempoEspera = (int) (Math.random() * 3000 + 2000);
 
-            for (Cliente cliente : clientes) {
+        Cliente nuevoCliente = new Cliente(nombre, tiempoEspera, colaClientes, this);
+        nuevoCliente.start();
 
-                try {
+        colaClientes.add(nuevoCliente);
+        contadorClientes++;
 
-                    cliente.join();
+    }
 
-                } catch (InterruptedException ignored) {}
+    // Detener la simulación con un botón
+    @FXML
+    private void detenerSimulacion() {
 
-            }
-
-            enMarcha = false;
-            c1.interrupt();
-            c2.interrupt();
-
-            try {
-
-                c1.join(); 
-                c2.join();
-
-            } catch (InterruptedException ignored) {}
-
-            Platform.runLater(() -> {
-
-                lblEstado.setText("Todos los clientes fueron atendidos o se fueron.");
-                btnIniciar.setDisable(false);
-
-            });
-
-        }).start();
+        enMarcha = false;
+        btnIniciar.setDisable(false);
+        lblEstado.setText("Simulación detenida.");
 
     }
 
@@ -123,6 +102,7 @@ public class MainController {
         Platform.runLater(() -> {
 
             listaEsperando.getItems().remove(nombre);
+
             if (!listaSeFueron.getItems().contains(nombre))
                 listaSeFueron.getItems().add(nombre);
 

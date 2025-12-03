@@ -27,7 +27,6 @@ public class Cliente extends Thread {
     @Override
     public void run() {
 
-        esperarLlegadaAleatoria();
         registrarLlegada();
 
         while (!atendido) {
@@ -40,21 +39,6 @@ public class Cliente extends Thread {
             }
 
             dormirHilo();
-
-        }
-
-    }
-
-    // Retraso de llegada aleatoria del cliente
-    private void esperarLlegadaAleatoria() {
-        
-        try {
-
-            Thread.sleep((int) (Math.random() * 3000));
-
-        } catch (InterruptedException e) {
-
-            interrupt();
 
         }
 

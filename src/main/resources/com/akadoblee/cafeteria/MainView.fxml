@@ -1,28 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.geometry.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Rectangle?>
 
-<VBox xmlns = "http://javafx.com/javafx/17" xmlns:fx = "http://javafx.com/fxml/1" fx:controller = "com.akadoblee.cafeteria.MainController" spacing = "10" alignment = "CENTER" styleClass = "root">
+<VBox alignment="CENTER" spacing="10" styleClass="root" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.akadoblee.cafeteria.MainController">
 
-    <Label text = "Cafetería" styleClass = "titulo"/>
+    <Label styleClass="titulo" text="Cafetería" />
 
-    <Button fx:id = "btnIniciar" text = "Iniciar Simulación" onAction = "#iniciarSimulacion" prefWidth = "200" styleClass = "boton"/>
+   <HBox alignment="CENTER" spacing="30.0">
 
-    <HBox spacing = "15" alignment = "CENTER">
+      <children>
 
-        <VBox alignment = "CENTER" styleClass = "panel">
-            <Label text = "Esperando" styleClass = "subtitulo"/>
+         <Button fx:id="btnIniciar" onAction="#iniciarSimulacion" prefWidth="200" styleClass="boton" text="Iniciar Simulación" />
+      
+         <Button fx:id="btnAñadirCliente" onAction="#añadirCliente" prefWidth="200" styleClass="boton" text="Dejar Pasar a Cliente" />
+
+         <Button fx:id="btnDetenerSimulacion" onAction="#detenerSimulacion" prefWidth="200" styleClass="boton" text="Detener Simulación" />
+
+      </children>
+
+   </HBox>
+
+    <HBox alignment="CENTER" spacing="15">
+
+        <VBox alignment="CENTER" styleClass="panel">
+        
+            <Label styleClass="subtitulo" text="Esperando" />
 
             <StackPane>
 
-                <ListView fx:id = "listaEsperando" prefWidth = "180" prefHeight = "300" styleClass = "list-view"/>
+                <ListView fx:id="listaEsperando" prefHeight="300" prefWidth="180" styleClass="list-view" />
                 
                 <clip>
 
-                    <Rectangle width = "180" height = "300" arcWidth = "20" arcHeight = "20"/>
+                    <Rectangle arcHeight="20" arcWidth="20" height="300" width="180" />
 
                 </clip>
 
@@ -30,17 +46,17 @@
 
         </VBox>
 
-        <VBox alignment = "CENTER" styleClass = "panel">
+        <VBox alignment="CENTER" styleClass="panel">
 
-            <Label text = "Atendidos" styleClass = "subtitulo"/>
+            <Label styleClass="subtitulo" text="Atendidos" />
 
             <StackPane>
 
-                <ListView fx:id = "listaAtendidos" prefWidth = "180" prefHeight = "300" styleClass = "list-view"/>
+                <ListView fx:id="listaAtendidos" prefHeight="300" prefWidth="180" styleClass="list-view" />
 
                 <clip>
 
-                    <Rectangle width = "180" height = "300" arcWidth = "20" arcHeight = "20"/>
+                    <Rectangle arcHeight="20" arcWidth="20" height="300" width="180" />
 
                 </clip>
 
@@ -48,17 +64,17 @@
 
         </VBox>
 
-        <VBox alignment = "CENTER" styleClass = "panel">
+        <VBox alignment="CENTER" styleClass="panel">
 
-            <Label text = "Se fueron" styleClass = "subtitulo"/>
+            <Label styleClass="subtitulo" text="Se fueron" />
 
             <StackPane>
 
-                <ListView fx:id = "listaSeFueron" prefWidth = "180" prefHeight = "300" styleClass = "list-view"/>
+                <ListView fx:id="listaSeFueron" prefHeight="300" prefWidth="180" styleClass="list-view" />
 
                 <clip>
 
-                    <Rectangle width = "180" height = "300" arcWidth = "20" arcHeight = "20"/>
+                    <Rectangle arcHeight="20" arcWidth="20" height="300" width="180" />
 
                 </clip>
 
@@ -68,6 +84,6 @@
 
     </HBox>
 
-    <Label fx:id = "lblEstado" text = "Esperando inicio..." styleClass = "estado"/>
+    <Label fx:id="lblEstado" styleClass="estado" text="Esperando inicio..." />
 
 </VBox>
